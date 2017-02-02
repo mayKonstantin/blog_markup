@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="vendor/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
     <div id="page-wrapper">
-        <div class="header">
+        <header class="header">
             <div class="overlay"></div>
-            <div class="container">
+            <div class="container header_container">
                 <div class="row">
 
                     <div class="col-md-12 profile-block">
@@ -35,25 +35,145 @@
                         </div>
                     </div>
                     <div class="col-md-12 button-block">
-                        <button type="button" class="btn btn-primary btn-circle btn-xl" data-toggle="tooltip" data-placement="top" title="Home"><i class="fa fa-home" aria-hidden="true"></i></button>
-                        <button type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="top" title="Articles"><i class="fa fa-file-text-o" aria-hidden="true"></i></button>
-                        <button type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="top" title="Projects"><i class="fa fa-cogs" aria-hidden="true"></i></button>
-                        <button type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="top" title="Skills"><i class="fa fa-pie-chart" aria-hidden="true"></i></button>
-                        <button type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="top" title="Sign In"><i class="fa fa-sign-in" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-primary btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" title="Home"><i class="fa fa-home" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" title="Articles"><i class="fa fa-file-text-o" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" title="Projects"><i class="fa fa-cogs" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" title="Skills"><i class="fa fa-pie-chart" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" title="Sign In"><i class="fa fa-sign-in" aria-hidden="true"></i></button>
+                    </div>
+                    
+                    <section id="scroll_section" class="scroller">
+                        <a href="#content"><span></span>Scroll</a>
+                    </section>
+                </div>
+            </div>
+        </header>
+
+        <div class="header_bottom">
+            <i class="fa fa-linkedin-square" aria-hidden="true"><a href="www.linkedin.com/in/konstantin-majdancev-57aa8a110" class="href">www.linkedin.com/in/konstantin-majdancev</a></i>
+            <a class="btn btn-default contact_information" href="mailto:may_konstantin@icloud.com" role="button">CONTACT ME</a>
+        </div>
+        
+        <div id="content" class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 small_block">
+                        <h3 class="about_me">
+                            About
+                        </h3>
+                        <hr>
+                        <section class="current">
+                            <h5 class="about_title">Current</h5>
+                            <span class="about_descr">Upwork Global Inc.</span>
+                        </section>
+
+                        <section class="previous">
+                            <h5 class="about_title">Previous</h5>
+                            <span class="about_descr">RonasIt LLC</span>
+                        </section>
+
+                        <section class="education">
+                            <h5 class="about_title">Education</h5>
+                            <span class="about_descr">Omsk State Technical University</span>
+                        </section>
+
+                        <section class="lives">
+                            <h5 class="about_title">Lives in</h5>
+                            <span class="about_descr">Omsk, Russia</span>
+                        </section>
                     </div>
 
+                    <div class="col-md-8 large_block">
+                        <h3 class="background_title">
+                            Background
+                        </h3>
+                        <hr>
+                        <section class="summary">
+                            <h4 class="bg_title"><i class="fa fa-file-code-o" aria-hidden="true"></i> Summary</h4>
+                            <p class="summary-descr"> Hi, everyone! Welcome to my personal web page. 
+                                I am a developer with aspiration for excellence in code as well as in UI. 
+                                I'm not afraid of hard work, and look forward to it. My field of experience includes a back-end as well, as front-end in javascript development.
+                                My hobbie is to create beautiful responsive websites and develop business web applications using javascript.
+                            </p>
+                            <p class="summary-descr">Have a nice day! =)</p>
+                        </section>
+                        
+                        <hr>
+
+                        <section class="experience">
+                            <h4 class="bg_title"><i class="fa fa-file-code-o" aria-hidden="true"></i> Experience</h4>
+                            <div class="job-item">
+                                <span class="bg_job_title">Full-stack Web Developer</span>
+                                <br>
+                                <a class="bg_company_title" href="http://upwork.com/">Upwork Global Inc.</a>
+                                <br>
+                                <span class="bg_time">January 2017 - Present</span>
+                                <br>
+                                <p class="job_descr">I'm a novice in the field of freelance, but i belive in success.</p>
+                            </div>
+                            <div class="job-item">
+                                <span class="bg_job_title">Full-stack Web Developer</span>
+                                <br>
+                                <a class="bg_company_title" href="http://ronasit.ru/">RonasIt LLC</a>
+                                <br>
+                                <span class="bg_time">August 2016 - Present</span>
+                                <br>
+                                <p class="job_descr">I had a big experience in "freelance style" work here. 
+                                    My field of expertise coverd developer activity as well, as manager work.
+                                    My skills list added with new mobile technoligies. It was a great practice.</p>
+                            </div>
+                            <div class="job-item">
+                                <span class="bg_job_title">Full-stack Web Developer</span>
+                                <br>
+                                <a class="bg_company_title" href="http://thumbtack.ru/">Thumbtack Technology</a>
+                                <br>
+                                <span class="bg_time">June 2015 - June 2016</span>
+                                <br>
+                                <p class="job_descr">This company gave me a great experience. 
+                                    I started my way in professional web development here. 
+                                    It was amazing experience in the team of professionals.</p>
+                            </div>
+                        </section>
+
+                        <hr>
+
+                        <section id="contact_information" class="contact">
+                            <h4 class="bg_title"><i class="fa fa-address-book-o" aria-hidden="true"></i> Contact Information</h4>
+                            <div class="contact-block">
+                                <span class="contact-item phone"><i class="fa fa-phone-square" aria-hidden="true"></i> +7-904-321-5524</span>
+                                <span class="contact-item phone"><i class="fa fa-skype" aria-hidden="true"></i> may_konstantin_skype</span>
+                                <span class="contact-item phone"><i class="fa fa-telegram" aria-hidden="true"></i> kmaydantsev</span>
+                                <span class="contact-item location"><i class="fa fa-envelope-o" aria-hidden="true"></i> may_konstantin@icloud.com</span>
+                                <span class="contact-item location"><i class="fa fa-compass" aria-hidden="true"></i> Russia - Omsk - GMT +06:00</span>
+                            </div>                        
+                        </section>
+
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="header_bottom">
-            <i class="fa fa-linkedin-square" aria-hidden="true"><a href="www.linkedin.com/in/konstantin-majdancev-57aa8a110" class="href">www.linkedin.com/in/konstantin-majdancev</a></i>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="footer_menu">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/articles">Articles</a></li>
+                            <li><a href="/projects">Projects</a></li>
+                            <li><a href="/skills">Skills</a></li>
+                            <li><a href="/sign_in">Sign In</a></li>
+                        </ul>
+                        <div class="copyright">Konstantin Maydantsev &copy; 2017</div>
+                    </div>
+                </div>
+            </div>
         </div>
-        
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="libs/scroll2id/PageScroll2id.min.js"></script>
+    <script src="vendor/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>
